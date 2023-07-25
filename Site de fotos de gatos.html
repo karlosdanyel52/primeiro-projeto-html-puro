@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>CatPhotoApp</title>
+  </head>
+  <body>
+    <main>
+      <h1>Galeria de fotos de Gato</h1>
+      <section>
+        <h2>Fotos de gatos</h2>
+        <!-- TODO: Adicionar link para fotos de gatos -->
+        <p>
+          Ver mais
+          <a target="_blank" href="https://freecatphotoapp.com"
+            >fotos de gatos</a
+          >
+          na nossa galeria.
+        </p>
+        <a href="https://freecatphotoapp.com"
+          ><img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."
+        /></a>
+      </section>
+      <section>
+        <h2>Listas de gatos</h2>
+        <h3>Coisas que os gatos adoram:</h3>
+        <ul>
+          <li>mordida de gato</li>
+          <li>ponteiros laser</li>
+          <li>lasanha</li>
+        </ul>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate."
+          />
+          <figcaption>Gatos <em>amam</em> lasanha.</figcaption>
+        </figure>
+        <h3>3 coisas que os gatos odeiam:</h3>
+        <ol>
+          <li>tratamento de pulgas</li>
+          <li>trovão</li>
+          <li>outros gatos</li>
+        </ol>
+        <figure>
+          <img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+            alt="Five cats looking around a field."
+          />
+          <figcaption>Gatos <strong>odeiam</strong> outros gatos.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Formulário de gatos</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>O seu gato é um gato de interior ou de exterior?</legend>
+            <label
+              ><input
+                id="indoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="indoor"
+                checked
+              />
+              Interior</label
+            >
+            <label
+              ><input
+                id="outdoor"
+                type="radio"
+                name="indoor-outdoor"
+                value="outdoor"
+              />
+              Ar livre</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Qual é a personalidade do seu gato?</legend>
+            <input
+              id="loving"
+              type="checkbox"
+              name="personality"
+              value="loving"
+              checked
+            />
+            <label for="loving">Amoroso</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy" />
+            <label for="lazy">Preguiçoso</label>
+            <input
+              id="energetic"
+              type="checkbox"
+              name="personality"
+              value="energetic"
+            />
+            <label for="energetic">Enérgico</label>
+          </fieldset>
+          <input
+            type="text"
+            name="catphotourl"
+            placeholder="URL da foto do gato"
+            required
+          />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        No Copyright -
+        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+      </p>
+    </footer>
+  </body>
+</html>
